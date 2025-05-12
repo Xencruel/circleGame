@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1024, height=720">
+  <title>Balbom</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <div class="game-container">
+    <div id="timer">Time: 30</div>
+    <div id="accuracy">Accuracy: %100</div>
+    
+        <div id="accuracy-bar">
+            <div id="accuracy-fill"></div>
+        </div>
+    
+    <div id="game"></div>
+    <div class="controls">
+      <button id="startButton">Start</button>
+      <button id="restartButton" style="display:none;">Restart</button>
+      <div id="scoreBoard" style="display:none;">
+        <h3>Result:</h3>
+        <p>Score: <span id="finalScore">0</span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

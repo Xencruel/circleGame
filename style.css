@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  #balbom{
+    font-size:24px;
+    font-family: bold;
+    color: chocolate;
+    text-align: center;
+    
+
+  }
+
+  header {
+    background: #0073e6;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    text-shadow: #222 1px 1px 2px;
+    
+}
+  
+  .game-container {
+    width: 1024px;
+    height: 720px;
+    background-color: white;
+    position: relative;
+    border: 2px solid #333;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  #timer {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+
+
+
+  #accuracy-bar {
+    position: absolute;
+    top: 15px;
+    left: 400px;
+    width: 200px;
+    height: 15px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  #accuracy-fill {
+    height: 100%;
+    width: 100%;
+    background-color: #4caf50;
+    transition: width 0.3s ease;
+  }
+
+  #accuracy-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: #333;
+  }
+  
+  #game {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .circle {
+    width: 50px;
+    height: 50px;
+    background-color: crimson;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    animation: popIn 0.3s ease-out;
+    transition: transform 0.2s ease;
+  }
+  
+  .controls {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #scoreBoard {
+    margin-top: 10px;
+  }
+
+  @keyframes popIn {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    80% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+  }
+  
+  #accuracy {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
